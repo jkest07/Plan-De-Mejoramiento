@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10 - Validación de Formularios</title>
+
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 10 - Validación de Formularios</h1>
+
+    <form id="form">
+        <label>Nombre:</label>
+        <input type="text" id="nombre">
+        <p id="error-nombre" class="error"></p>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <p id="error-email" class="error"></p>
+
+        <label>Edad:</label>
+        <input type="number" id="edad" min="1">
+        <p id="error-edad" class="error"></p>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2 id="resultado"></h2>
+
+    <script src="10.js"></script>
+</body>
+</html>

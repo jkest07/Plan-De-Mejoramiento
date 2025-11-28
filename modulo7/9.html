@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9 - Modo Oscuro</title>
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #000000;
+        }
+
+        body.modo-oscuro {
+            --bg: #181818;
+            --text: #f1f1f1;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: Arial;
+            transition: 0.3s;
+            padding: 20px;
+        }
+
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 9 - Modo Oscuro</h1>
+
+    <button id="btn-modo">Cambiar modo</button>
+
+    <script src="9.js"></script>
+</body>
+</html>
