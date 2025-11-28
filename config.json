@@ -1,0 +1,11 @@
+{
+  "aplicacion": {
+    "nombre": "Mi Aplicación",
+    "version": "1.0.0",
+    "debug": false
+  },
+  "base_datos": {
+    "host": "localhost",
+    "puerto": 5432
+  }
+}
