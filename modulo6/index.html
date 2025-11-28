@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        section { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            background: #fafafa;
+        }
+        h2 { margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 8px; }
+        input, button { padding: 6px; }
+        .modal {
+            display: none;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicios (Conectados a JS externo)</h1>
+
+    <!-- EJERCICIO 1 -->
+    <section>
+        <h2>1 — Carrito de Compras</h2>
+        <div id="productos"></div>
+        <h3>Carrito</h3>
+        <div id="carrito"></div>
+        <h3>Total: $<span id="total">0</span></h3>
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </section>
+
+    <!-- EJERCICIO 2 -->
+    <section>
+        <h2>2 — Usuarios con Fetch</h2>
+        <button id="cargar-usuarios">Cargar usuarios</button>
+        <ul id="lista-usuarios"></ul>
+    </section>
+
+    <!-- EJERCICIO 3 -->
+    <section>
+        <h2>3 — Lista de Tareas (LocalStorage)</h2>
+        <form id="form-tareas">
+            <input id="input-tarea" placeholder="Agregar tarea..." required>
+            <button>Agregar</button>
+        </form>
+        <div id="lista-tareas"></div>
+    </section>
+
+    <!-- EJERCICIO 4 -->
+    <section>
+        <h2>4 — Personas (Clases)</h2>
+        <form id="form-personas">
+            <input id="persona-nombre" placeholder="Nombre" required>
+            <input id="persona-edad" type="number" placeholder="Edad" required>
+            <input id="persona-correo" placeholder="Correo" required>
+            <button>Agregar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Correo</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-personas"></tbody>
+        </table>
+    </section>
+
+    <!-- EJERCICIO 5 -->
+    <section>
+        <h2>5 — CRUD Simple</h2>
+
+        <form id="form-crud">
+            <input id="crud-nombre" placeholder="Nombre" required>
+            <input id="crud-categoria" placeholder="Categoría" required>
+            <input id="crud-precio" type="number" placeholder="Precio" required>
+            <button>Agregar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="crud-tabla"></tbody>
+        </table>
+
+        <!-- Modal de edición -->
+        <div id="crud-modal" class="modal">
+            <h3>Editar elemento</h3>
+            <form id="form-crud-edit">
+                <input id="crud-edit-nombre" placeholder="Nombre" required>
+                <input id="crud-edit-categoria" placeholder="Categoría" required>
+                <input id="crud-edit-precio" type="number" placeholder="Precio" required>
+                <button>Guardar</button>
+                <button type="button" id="crud-cancelar">Cancelar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts externos -->
+    <script src="1.js"></script>
+    <script src="2.js"></script>
+    <script src="3.js"></script>
+    <script src="4.js"></script>
+    <script src="5.js"></script>
+
+</body>
+</html>
