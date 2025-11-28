@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "gift": "Netflix",
+        "tipo": "Suscripción",
+        "tiempo": "1 mes",
+        "precio": 20000,
+        "imagen": "https://..."
+    },
+    {
+        "id": 2,
+        "gift": "Spotify",
+        "tipo": "Suscripción",
+        "tiempo": "1 mes",
+        "precio": 15000,
+        "imagen": "https://..."
+    }
+]
